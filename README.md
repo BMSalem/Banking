@@ -189,7 +189,7 @@ Resultat :
    <div style="text-align: center;"><img src="assets/Swagger_depend.PNG"></div><br>
 
    Afficher le résultat :
-   <div style="text-align: center;"><img src="assets/Swagger_depend2.PNG"></div>
+   <div style="text-align: center;"><img src="assets/Swagger_Depend2.PNG"></div>
    <div style="text-align: center;"><img src="assets/Swagger_depend3.PNG"></div>
    <div style="text-align: center;"><img src="assets/Swagger_bankAcc.PNG"></div>
    <div style="text-align: center;"><img src="assets/Swagger_bankAcc2.PNG"></div>
