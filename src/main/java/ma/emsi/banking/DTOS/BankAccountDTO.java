@@ -1,4 +1,4 @@
-/*package ma.emsi.banking.DTOS;
+package ma.emsi.banking.DTOS;
 
 import lombok.Data;
 
@@ -7,4 +7,3 @@ import lombok.Data;
 public class BankAccountDTO {
     private String type;
 }
-*/

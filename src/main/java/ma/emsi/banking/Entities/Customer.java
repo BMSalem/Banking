@@ -20,6 +20,6 @@ public class Customer {
     private String name;
     private String email;
     @OneToMany(mappedBy = "customer")
-    //@JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY) // Dire a l'API: d'ignorer la sérialization de bankAccounts
     private List<BankAccount> bankAccounts;
 }

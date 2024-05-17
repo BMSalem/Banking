@@ -1,4 +1,4 @@
-/*package ma.emsi.banking.DTOS;
+package ma.emsi.banking.DTOS;
 
 import lombok.Data;
 import ma.emsi.banking.Enums.OperationType;
@@ -13,4 +13,3 @@ public class AccountOperationDTO {
     private OperationType type;
     private String description;
 }
-*/

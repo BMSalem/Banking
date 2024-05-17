@@ -1,4 +1,4 @@
-/*package ma.emsi.banking.DTOS;
+package ma.emsi.banking.DTOS;
 
 import lombok.Data;
 
@@ -8,4 +8,3 @@ public class CreditDTO {
     private double amount;
     private String description;
 }
-*/

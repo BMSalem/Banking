@@ -1,4 +1,4 @@
-/*package ma.emsi.banking.Services;
+package ma.emsi.banking.Services;
 
 import ma.emsi.banking.DTOS.*;
 import ma.emsi.banking.Exception.BalanceNotSufficientException;
@@ -6,7 +6,6 @@ import ma.emsi.banking.Exception.BankAccountNotFoundException;
 import ma.emsi.banking.Exception.CustomerNotFoundException;
 
 import java.util.List;
-
 public interface BankAccountService {
     CustomerDTO saveCustomer(CustomerDTO customerDTO);
     CurrentBankAccountDTO saveCurrentBankAccount(double initialBalance, double overDraft, Long customerId) throws CustomerNotFoundException;
@@ -18,17 +17,10 @@ public interface BankAccountService {
     void transfer(String accountIdSource, String accountIdDestination, double amount) throws BankAccountNotFoundException, BalanceNotSufficientException;
 
     List<BankAccountDTO> bankAccountList();
-
     CustomerDTO getCustomer(Long customerId) throws CustomerNotFoundException;
-
     CustomerDTO updateCustomer(CustomerDTO customerDTO);
-
     void deleteCustomer(Long customerId);
-
     List<AccountOperationDTO> accountHistory(String accountId);
-
     AccountHistoryDTO getAccountHistory(String accountId, int page, int size) throws BankAccountNotFoundException;
-
-    List<CustomerDTO> searchCustomers(String keyword);
+    //List<CustomerDTO> searchCustomers(String keyword);
 }
-*/

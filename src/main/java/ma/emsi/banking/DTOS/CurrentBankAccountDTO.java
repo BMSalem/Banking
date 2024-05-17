@@ -1,4 +1,4 @@
-/*package ma.emsi.banking.DTOS;
+package ma.emsi.banking.DTOS;
 
 import lombok.Data;
 import ma.emsi.banking.Enums.AccountStatus;
@@ -13,4 +13,3 @@ public class CurrentBankAccountDTO extends BankAccountDTO {
     private CustomerDTO customerDTO;
     private double overDraft;
 }
-*/

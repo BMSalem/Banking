@@ -1,4 +1,4 @@
-/*package ma.emsi.banking.DTOS;
+package ma.emsi.banking.DTOS;
 
 import lombok.Data;
 
@@ -13,4 +13,3 @@ public class AccountHistoryDTO {
     private int pageSize;
     private List<AccountOperationDTO> accountOperationDTOS;
 }
-*/

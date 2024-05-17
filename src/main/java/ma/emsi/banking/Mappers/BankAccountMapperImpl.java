@@ -1,4 +1,4 @@
-/*package ma.emsi.banking.Mappers;
+package ma.emsi.banking.Mappers;
 
 import ma.emsi.banking.DTOS.AccountOperationDTO;
 import ma.emsi.banking.DTOS.CurrentBankAccountDTO;
@@ -16,7 +16,7 @@ import org.springframework.stereotype.Service;
 public class BankAccountMapperImpl {
     public CustomerDTO fromCustomer(Customer customer){
         CustomerDTO customerDTO=new CustomerDTO();
-        BeanUtils.copyProperties(customer,customerDTO);
+        BeanUtils.copyProperties(customer,customerDTO); //Pour éviter de faire des Sets, transfer de customer vers DTO de manière dynamique
         return  customerDTO;
     }
     public Customer fromCustomerDTO(CustomerDTO customerDTO){
@@ -25,7 +25,7 @@ public class BankAccountMapperImpl {
         return  customer;
     }
 
-    public SavingBankAccountDTO fromSavingBankAccount(SavingAccount savingAccount){
+   public SavingBankAccountDTO fromSavingBankAccount(SavingAccount savingAccount){
         SavingBankAccountDTO savingBankAccountDTO=new SavingBankAccountDTO();
         BeanUtils.copyProperties(savingAccount,savingBankAccountDTO);
         savingBankAccountDTO.setCustomerDTO(fromCustomer(savingAccount.getCustomer()));
@@ -61,4 +61,3 @@ public class BankAccountMapperImpl {
         return accountOperationDTO;
     }
 }
-*/
