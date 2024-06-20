@@ -1,5 +1,5 @@
 
-<h3>Compte Rendu Projet Banking </h3>
+<h2>Compte Rendu Projet Banking </h2>
 <p>
 On considère le schéma suivant :<br>
 <div style="text-align: center;"><img src="assets/img.png"></div>
@@ -194,5 +194,33 @@ Resultat :
    <div style="text-align: center;"><img src="assets/Swagger_bankAcc.PNG"></div>
    <div style="text-align: center;"><img src="assets/Swagger_bankAcc2.PNG"></div>
 
+<h3>Part 3 : Security</h3>
+1. <h4>Ajout de la dépendance </h4>
+<div style="text-align: center;"><img src="assets/dependance.PNG"></div>
+
+2. <h4>Ajouter la classe SecurityConfig </h4>
+<div style="text-align: center;"><img src="assets/security_class.PNG"></div>
+<div style="text-align: center;"><img src="assets/security_class1.PNG"></div>
+<div style="text-align: center;"><img src="assets/security_class2.PNG"></div>
+
+3. <h4>Ajout du controller Security Controller </h4>
+<div style="text-align: center;"><img src="assets/security_controller.PNG"></div>
+<div style="text-align: center;"><img src="assets/security_controller1.PNG"></div>
+
+4. <h4>Protéger les endpoints avec les rôles </h4>
+<div style="text-align: center;"><img src="assets/security_scope.PNG"></div>
+<div style="text-align: center;"><img src="assets/security_scope1.PNG"></div>
+
+5. <h4>Tester avec l'outil HTTP Client </h4>
+Post:
+<div style="text-align: center;"><img src="assets/http_post.PNG"></div>
+Résultat:
+<div style="text-align: center;"><img src="assets/resultat_post1.PNG"></div>
+<div style="text-align: center;"><img src="assets/resultat_post2.PNG"></div>
+Get:
+<div style="text-align: center;"><img src="assets/http_get.PNG"></div>
+Résultat:
+<div style="text-align: center;"><img src="assets/resultat_get.PNG"></div>
+<div style="text-align: center;"><img src="assets/resultat_get2.PNG"></div>
    
    

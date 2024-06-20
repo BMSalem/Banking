@@ -1,6 +1,7 @@
 package ma.emsi.banking.Web;
 
 import ma.emsi.banking.DTOS.*;
+import ma.emsi.banking.Exception.BalanceNotSufficientException;
 import ma.emsi.banking.Exception.BankAccountNotFoundException;
 import ma.emsi.banking.Services.BankAccountService;
 import org.springframework.web.bind.annotation.*;
@@ -35,7 +36,7 @@ public class BankAccountRestAPI {
             @RequestParam(name="size",defaultValue = "5")int size) throws BankAccountNotFoundException {
         return bankAccountService.getAccountHistory(accountId,page,size);
     }
-    /*
+
     @PostMapping("/accounts/debit")
     public DebitDTO debit(@RequestBody DebitDTO debitDTO) throws BankAccountNotFoundException, BalanceNotSufficientException {
         this.bankAccountService.debit(debitDTO.getAccountId(),debitDTO.getAmount(),debitDTO.getDescription());
@@ -52,5 +53,5 @@ public class BankAccountRestAPI {
                 transferRequestDTO.getAccountSource(),
                 transferRequestDTO.getAccountDestination(),
                 transferRequestDTO.getAmount());
-    }*/
+    }
 }
